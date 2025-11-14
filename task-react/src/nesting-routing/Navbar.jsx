@@ -1,6 +1,7 @@
 // Navbar.jsx
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import { FiHeart, FiUser, FiShoppingCart, FiSearch } from "react-icons/fi";
 import "./Navbar.css";
 
 const Navbar = () => {
@@ -8,38 +9,39 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <NavLink to="/" className="logo">
-        KHILA
-      </NavLink>
 
+      {/* LEFT - LOGO */}
+      <div className="nav-left">
+        <NavLink to="/" className="logo">
+          KHILA
+        </NavLink>
+      </div>
+
+      {/* CENTER - LINKS */}
+      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
+        <li><NavLink to="/">WOMEN</NavLink></li>
+        <li><NavLink to="/">MEN</NavLink></li>
+        <li><NavLink to="/">KIDS</NavLink></li>
+        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/">BRANDS</NavLink></li>
+        <li><NavLink to="/">SALE</NavLink></li>
+      </ul>
+
+      {/* RIGHT - ICONS */}
+      <div className="nav-right">
+        <FiSearch className="icon" />
+        <FiHeart className="icon" />
+        <FiUser className="icon" />
+        <FiShoppingCart className="icon" />
+      </div>
+
+      {/* MOBILE MENU ICON */}
       <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
 
-      <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-        <li>
-          <NavLink to="/" onClick={() => setMenuOpen(false)}>
-            HOME
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/about" onClick={() => setMenuOpen(false)}>
-            ABOUT
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/services" onClick={() => setMenuOpen(false)}>
-            SERVICES
-          </NavLink>
-        </li>
-        <li>
-          <NavLink to="/contact" onClick={() => setMenuOpen(false)}>
-            CONTACT
-          </NavLink>
-        </li>
-      </ul>
     </nav>
   );
 };

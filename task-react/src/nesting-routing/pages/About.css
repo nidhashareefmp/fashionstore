@@ -1,0 +1,96 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full height */
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+/* Main page container */
+.about-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  width: 100vw;
+  min-height: 100vh;
+  background: beige;
+  padding-top: 100px; 
+  text-align: center;
+}
+
+/* Title */
+.about-page h1 {
+  font-size: 42px;
+  font-weight: 700;
+  color:#3a2d00;
+  padding: 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+/* Content wrapper */
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 100%;
+}
+
+/* About info box — smaller & centered */
+.about-box {
+  background: #fff8dc;
+  border-radius: 16px;
+  padding: 25px 35px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px; /* smaller width */
+  width: 80%;
+  text-align: left;
+  color: #3a2f00;
+  line-height: 1.6;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.about-box h2 {
+  text-align: center;
+  color: #b68b00;
+  margin-bottom: 15px;
+}
+
+.about-box p {
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.about-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-box li {
+  font-size: 15px;
+  margin: 6px 0;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: #5c4b00;
+  padding: 20px 0;
+  margin-top: 20px;
+}

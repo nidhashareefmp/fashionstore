@@ -1,0 +1,145 @@
+/* HOME PAGE GENERAL */
+.home-page {
+  background: beige;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+/* HERO SECTION */
+.hero {
+  height: 80vh;
+  background: beige; /* keeps same color theme */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero-content h1 {
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  color: #3a2d00; /* your title color */
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-content p {
+  font-size: 22px;
+  color: #4a3f00; /* your tagline color */
+  max-width: 600px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.shop-btn {
+  background-color: #3a2d00;
+  color: beige;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 5px;
+}
+
+.shop-btn:hover {
+  background-color: #4a3f00;
+}
+
+/* FEATURED CATEGORIES */
+.categories {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.categories h2 {
+  font-size: 36px;
+  color: #3a2d00;
+  margin-bottom: 20px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.category-card {
+  background: #fff6dd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.category-card:hover {
+  transform: scale(1.05);
+}
+
+.category-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.category-card p {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #3a2d00;
+  font-size: 18px;
+}
+
+/* FOOTER */
+.footer {
+  background: #3a2d00;
+  color: beige;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 40px;
+}
+
+.footer h3 {
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #fff2c6;
+}
+
+.footer p {
+  margin: 8px 0;
+}
+
+.footer-links a {
+  color: beige;
+  margin: 0 12px;
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff2c6;
+}
+/* SOCIAL ICONS */
+.social-links {
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  color: beige;
+  font-size: 24px;
+  margin: 0 10px;
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  color: #fff2c6;
+  transform: scale(1.15);
+}

@@ -19,12 +19,11 @@ const Navbar = () => {
 
       {/* CENTER - LINKS */}
       <ul className={menuOpen ? "nav-links open" : "nav-links"}>
-        <li><NavLink to="/">WOMEN</NavLink></li>
-        <li><NavLink to="/">MEN</NavLink></li>
-        <li><NavLink to="/">KIDS</NavLink></li>
-        <li><NavLink to="/">HOME</NavLink></li>
+        <li><NavLink to="/Home">HOME</NavLink></li>
+        <li><NavLink to="/About">ABOUT</NavLink></li>
+        <li><NavLink to="/Services">SERVICES</NavLink></li>
         <li><NavLink to="/">BRANDS</NavLink></li>
-        <li><NavLink to="/">SALE</NavLink></li>
+        <li><NavLink to="/Contact">CONTACT</NavLink></li>
       </ul>
 
       {/* RIGHT - ICONS */}

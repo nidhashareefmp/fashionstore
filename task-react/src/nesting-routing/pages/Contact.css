@@ -60,10 +60,72 @@
   color: #3a2d00;
 }
 
-/* Footer */
+/* FOOTER */
 .footer {
-  margin-top: 40px;
-  font-size: 14px;
-  color: #3a2d00;
+  background: #4E342E;  
+  color: #f4e9d8;       
+  padding: 60px 0;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
+
+/* Brand name */
+.footer h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Tagline */
+.footer p {
+  margin-bottom: 20px;
+  color: #e8d8c3;
+  font-size: 14px;
+}
+
+/* Social Icons */
+.social-links a {
+  margin: 0 10px;
+  color: #f4e9d8;
+  font-size: 22px;
+  transition: 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  transform: scale(1.15);
+}
+
+/* Footer links */
+.footer-links {
+  margin-top: 25px;
+}
+
+.footer-links a {
+  margin: 0 12px;
+  color: #e0cdb5;
+  font-size: 15px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+/* Divider */
+.footer-divider {
+  width: 90%;
+  height: 1px;
+  background: #7a655f;
+  margin: 30px auto;
+}
+
+/* Copyright */
+.footer-bottom {
+  font-size: 13px;
+  color: #d9c7b4;
+  margin-top: 15px;
+}
+

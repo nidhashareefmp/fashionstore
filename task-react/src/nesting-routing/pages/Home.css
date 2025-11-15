@@ -2,72 +2,71 @@
 .home-page {
   font-family: 'Poppins', sans-serif;
   color: #111;
+  padding-top: 15px;
 }
 /* TOP STATIC BANNER */
-.top-banner{
-  margin-top: 25px;
-  padding-top: 45px;
+.top-banner {
+  height: 100vh;
+  width: 100%;
   overflow: hidden;
-}
-.top-banner video {
-  width: 100%;
-  height: auto;   
-  object-fit: contain;
-  /* margin-bottom: 20px; */
-}
-
-
-/* HERO */
-.hero-carousel {
   position: relative;
-  width: 100%;
-  height: 85vh;
-  overflow: hidden;
+  margin-top: 80px;       
+  /* padding: 0;       */
 }
 
-/* Slide container */
-.carousel-container {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-/* EACH SLIDE */
-.carousel-slide {
-  width: 100%;
-  height: 100%;
-  display: none;
-  position: relative;
-}
-
-.carousel-slide img {
+.top-banner img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  /* object-position: center; */
+  display: block;
+  /* margin-bottom: 20px; */
 }
 
-/* TEXT ON SLIDE */
-.hero-text {
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  padding: 25px 40px;
+/* CATEGORIES */
+.categories {
+  padding: 80px 60px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.category-card {
+  background: #fff;
   border-radius: 10px;
-  text-align: right;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.hero-text h1 {
-  font-size: 50px;
-  font-weight: 600;
+.category-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
 }
 
-.hero-text p {
-  font-size: 20px;
-  margin-top: 5px;
-  color: #333;
+.category-card p {
+  padding: 15px;
+  font-size: 18px;
 }
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+
+
 
 /* BUTTON */
 .shop-btn {
@@ -132,73 +131,71 @@
   to { opacity: 1; }
 }
 
-
-/* CATEGORIES */
-.categories {
-  padding: 80px 60px;
+/* FOOTER */
+.footer {
+  background: #4E342E;  
+  color: #f4e9d8;       
+  padding: 60px 0;
   text-align: center;
+  font-family: 'Poppins', sans-serif;
 }
 
-.section-title {
-  font-size: 32px;
-  font-weight: 500;
-  margin-bottom: 40px;
+/* Brand name */
+.footer h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
 }
 
-.category-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 25px;
+/* Tagline */
+.footer p {
+  margin-bottom: 20px;
+  color: #e8d8c3;
+  font-size: 14px;
 }
 
-.category-card {
-  background: #fff;
-  border-radius: 10px;
-  overflow: hidden;
-  cursor: pointer;
+/* Social Icons */
+.social-links a {
+  margin: 0 10px;
+  color: #f4e9d8;
+  font-size: 22px;
   transition: 0.3s ease;
 }
 
-.category-card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
+.social-links a:hover {
+  color: #ffffff;
+  transform: scale(1.15);
 }
 
-.category-card p {
-  padding: 15px;
-  font-size: 18px;
-}
-
-.category-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-/* FOOTER */
-.footer {
-  background: #111;
-  padding: 40px 0;
-  color: #fff;
-  text-align: center;
-}
-
-.footer h3 {
-  font-size: 22px;
+/* Footer links */
+.footer-links {
+  margin-top: 25px;
 }
 
 .footer-links a {
-  margin: 0 15px;
-  color: #aaa;
+  margin: 0 12px;
+  color: #e0cdb5;
+  font-size: 15px;
   text-decoration: none;
+  transition: 0.3s ease;
 }
 
 .footer-links a:hover {
   color: #fff;
 }
 
-.social-links a {
-  margin: 0 10px;
-  color: #fff;
-  font-size: 20px;
+/* Divider */
+.footer-divider {
+  width: 90%;
+  height: 1px;
+  background: #7a655f;
+  margin: 30px auto;
+}
+
+/* Copyright */
+.footer-bottom {
+  font-size: 13px;
+  color: #d9c7b4;
+  margin-top: 15px;
 }

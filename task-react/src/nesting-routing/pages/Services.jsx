@@ -14,9 +14,30 @@ function Services() {
         <p><strong>🚚 Doorstep Delivery:</strong> Fast and reliable delivery at your convenience.</p>
       </div>
 
+     
+{/* footer  */}
       <footer className="footer">
-        <p>© 2025 Khila — All Rights Reserved</p>
-      </footer>
+  <h3>Khila Fashion</h3>
+  <p>Where elegance meets comfort.</p>
+
+  <div className="social-links">
+    <a href="#"><i className="fab fa-instagram"></i></a>
+    <a href="#"><i className="fab fa-whatsapp"></i></a>
+    <a href="#"><i className="fab fa-facebook"></i></a>
+    <a href="#"><i className="fab fa-youtube"></i></a>
+  </div>
+
+  <div className="footer-links">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/shop">Shop</a>
+    <a href="/contact">Contact</a>
+  </div>
+
+  <div className="footer-divider"></div>
+
+  <p className="footer-bottom">© 2025 Khila Fashion. All rights reserved.</p>
+</footer>
     </div>
   );
 }
